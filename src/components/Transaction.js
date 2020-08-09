@@ -1,8 +1,8 @@
 import React from 'react'
 
 export const Transaction = ({transaction}) => {
-    const sign = transaction.type === "spend" ? '-' : '+' ;
-    const type = transaction.type === "spend" ? "minus" : "plus" ;
+    const sign = transaction.amount<0 ? '-' : '+' ;
+    const type = transaction.amount<0 ? "minus" : "plus" ;
     return (  
       <li className={type} >
         {transaction.text}
