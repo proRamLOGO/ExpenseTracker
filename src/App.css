@@ -27,7 +27,7 @@ body {
 
 .container {
   margin: 30px auto;
-  width: 350px;
+  width: 600px;
 }
 
 h1 {
@@ -179,4 +179,14 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+/*Responsive*/
+@media (max-width: 600px) {
+
+.container {
+  margin: 30px auto;
+  width: 300px;
+}
+
 }
