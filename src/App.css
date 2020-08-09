@@ -134,6 +134,14 @@ input[type='number'] {
   outline: 0;
   background-color: #ccc4f7;
 }
+#addBtn:focus {
+  outline: 0;
+  background-color: #17cf26;
+}
+#payBtn:focus {
+  outline: 0;
+  background-color: #e74c3c;
+}
 
 .list {
   list-style-type: none;
