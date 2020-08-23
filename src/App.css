@@ -192,24 +192,38 @@ input[type='number'] {
 #footer {
   background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
   left: 0;
+  bottom: 0;
+  right: 0;
   background-color: #fff;
   width: 100%;
   position: fixed;
-  bottom: 0;
   color: #fff ;
   margin-top: 10px;
-  vertical-align:middle;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   height: 50px;
+  display:flex;
 }
 
 #footer h4 {
-  display: inline-block;
-  vertical-align: middle;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 24px;
+  /* display: inline-block;
+  vertical-align: middle; */
   text-align: center;
-  color: #fff;
-  height: 100%;
+  color: rgb(158, 31, 31);
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(4, 87, 18);
+}
+
+a:hover {
+  color: rgb(131, 35, 5);
 }
 
 /*Responsive*/
