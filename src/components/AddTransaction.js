@@ -39,15 +39,15 @@ export const AddTransaction = () => {
         <h3>ADD NEW TRANSACTION</h3>
         <form id="form">
           <div className="form-control">
-            <label htmlFor="text">Description</label>
-            <input type="text" id="text" value={text} onChange={ (e)=> setText(e.target.value)} placeholder="Diya Gave / Payed Shubh ..." />
-          </div>
-          <div className="form-control">
             <label htmlFor="amount">Amount <br /></label>
             <br/>
             < button id="addBtn" className="btn2" onClick={gainReady} >+</button>
             < button id="payBtn" className="btn2" onClick={payReady} >-</button>
             <input type="number" id="amount" value={amount} onChange={ (e)=> setAmount( factor*e.target.value )} placeholder="Enter amount..." />
+          </div>
+          <div className="form-control">
+            <label htmlFor="text">Description</label>
+            <input type="text" id="text" value={text} onChange={ (e)=> setText(e.target.value)} placeholder="Diya Gave / Payed Shubh ..." />
           </div>
           <button className="btn" onClick={onSubmit} >Add Transaction</button>
         </form>  

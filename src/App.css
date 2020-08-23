@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  margin: 30px auto;
+  margin: 30px auto 100px auto ;
   width: 600px;
 }
 
@@ -187,6 +187,29 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+#footer {
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: #fff ;
+  margin-top: 10px;
+  vertical-align:middle;
+  text-align: center;
+  height: 50px;
+}
+
+#footer h4 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  width: 100%;
 }
 
 /*Responsive*/
