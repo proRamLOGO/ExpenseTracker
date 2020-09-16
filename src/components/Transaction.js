@@ -5,9 +5,9 @@ export const Transaction = ({transaction}) => {
     const sign = transaction.amount<0 ? '-' : '+' ;
     const type = transaction.amount<0 ? "minus" : "plus" ;
 
-    const {deleteTransaction} = useContext(GlobalContext);
+    const {deleteTransaction} = useContext(GlobalContext) ;
 
-    return (  
+    return (
       <li className={type} >
         {transaction.text}
         <strong><span>{sign} ₹{Math.abs(transaction.amount)}</span></strong>

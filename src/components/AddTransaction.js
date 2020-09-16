@@ -14,9 +14,8 @@ export const AddTransaction = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-
         const newTransaction = {
-          id: transactions.length,
+          id: transactions.length+1,
           text,
           amount 
         }
@@ -27,10 +26,16 @@ export const AddTransaction = () => {
     const payReady  = e => {
       e.preventDefault();
       factor = -1 ;
+      setAmount(Number(document.getElementById("amount").value)*factor);
+      document.getElementById("payBtn").style.backgroundColor = "#e74c3c" ;
+      document.getElementById("addBtn").style.backgroundColor = "rgb(239, 239, 239)" ;
     }
     const gainReady  = e => {
       e.preventDefault();
       factor = 1 ;
+      setAmount(Number(document.getElementById("amount").value)*factor);
+      document.getElementById("payBtn").style.backgroundColor = "rgb(239, 239, 239)" ;
+      document.getElementById("addBtn").style.backgroundColor = "#17cf26" ;
     }
 
 
@@ -41,9 +46,9 @@ export const AddTransaction = () => {
           <div className="form-control">
             <label htmlFor="amount">Amount <br /></label>
             <br/>
-            < button id="addBtn" className="btn2" onClick={gainReady} >+</button>
+            < button id="addBtn" className="btn2" style={{backgroundColor: "#17cf26"}} onClick={gainReady} >+</button>
             < button id="payBtn" className="btn2" onClick={payReady} >-</button>
-            <input type="number" id="amount" value={amount} onChange={ (e)=> setAmount( factor*e.target.value )} placeholder="Enter amount..." />
+            < input type="number" id="amount" onChange={ (e)=> setAmount( factor*e.target.value ) } placeholder="Enter amount..." />
           </div>
           <div className="form-control">
             <label htmlFor="text">Description</label>

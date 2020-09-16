@@ -134,11 +134,11 @@ input[type='number'] {
   outline: 0;
   background-color: #ccc4f7;
 }
-#addBtn:focus {
+#addBtn:active {
   outline: 0;
   background-color: #17cf26;
 }
-#payBtn:focus {
+#payBtn:active {
   outline: 0;
   background-color: #e74c3c;
 }
@@ -201,7 +201,7 @@ input[type='number'] {
   margin-top: 10px;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 10vh;
   display:flex;
 }
 
@@ -213,13 +213,13 @@ input[type='number'] {
   /* display: inline-block;
   vertical-align: middle; */
   text-align: center;
-  color: rgb(158, 31, 31);
+  color: rgb(255, 255, 255);
   width: 100%;
 }
 
 a {
   text-decoration: none;
-  color: rgb(4, 87, 18);
+  color: rgb(37, 37, 37);
 }
 
 a:hover {
